@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>eccs-“一带一路”中国国际信息通信合作平台
+    </title>
+  </head>
+  <body>
+    <script>
+      var userAgent = navigator.userAgent; 
+      // var isOpera = userAgent.indexOf("Opera") > -1;
+      if(userAgent.indexOf("Trident")==37||userAgent.indexOf("Trident")==60||userAgent.indexOf("Trident")==59){
+
+        console.log(userAgent.indexOf("Trident"))
+        alert('暂不支持ie浏览器，可使用360等浏览器极速模式打开，推荐使用chrome浏览器')
+      }
+    </script>
+    <!-- <div class="box">111</div> -->
+    <noscript>
+      <strong>We're sorry but eccs doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

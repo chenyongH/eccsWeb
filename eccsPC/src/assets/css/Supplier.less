@@ -1,0 +1,320 @@
+@url: "../images/";
+.supplierCont{
+  .content{
+    width:1300px;
+    margin:0 auto;
+    padding:34px 50px 50px 50px;
+    box-sizing: border-box;
+    font-size:12px;
+    background-color: #FFFFFF;
+    color:#666;
+    a{color:#666;}
+    .search{
+      display:flex;
+    }
+    .hotRecommend{
+      width:100%;
+      display:flex;
+      flex-wrap: wrap;
+      font-size:14px;
+      padding:10px ;
+      box-sizing: border-box;
+    }
+    .hotRecommend>.title{
+      color:#17A6B5;
+    }
+    .hotRecommend>a{
+      margin:0 0 10px 20px;
+      color:#999;
+    }
+    .hotRecommend>a:hover{
+      color:#17A6B5;
+    }
+    .detail{
+      width:100%;
+      border:1px solid #f1f1f1;
+      border-bottom: none;
+      display:flex;
+      flex-flow: column;
+      li{
+        width:100%;
+        height:40px;
+        padding:0 10px;
+        box-sizing: border-box;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #f1f1f1;
+        .left{
+          display:flex;
+          align-items: center;
+          width:90%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          p{word-break: keep-all;}
+          a{
+            margin-left:30px;
+            padding:0 10px;
+            border-radius:2px;
+            word-break: keep-all;
+            &:hover,&:first-of-type{
+              color:#fff;
+              background-color: #17A6B5;
+            }
+
+          }
+          .el-dropdown{
+            margin-left:28px;
+          }
+        }
+        .right{
+          display:flex;
+          align-items: center;
+          button{
+            padding:0;
+            font-size:0.1rem;
+            margin-left: 5px;
+            a{
+              color:#666;
+            }
+          }
+        }
+
+      }
+    }
+    .brand{
+      width:100%;
+      padding:10px;
+      box-sizing: border-box;
+      border:1px solid #f1f1f1;
+      display:flex;
+      margin-bottom: 20px;
+      .left{width:40px;}
+      .right{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left:50px;
+        .imgBox{
+          width:120px;
+          height:50px;
+          padding:5px;
+          box-sizing: border-box;
+          border:1px solid #f1f1f1;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          img{
+            height:100%;
+          }
+        }
+      }
+    }
+    .contents{
+      width:100%;
+      display:flex;
+      justify-content: space-between;
+      margin-top:20px;
+      .left{
+        width:990px;
+        .filter{
+          width:100%;
+          height:40px;
+          display:flex;
+          align-items: center;
+          border:1px solid #f1f1f1;
+          .el-button{
+            font-size:12px;
+            border:1px solid #f1f1f1;
+            border-left:0;
+            &:first-child{border-left:1px solid #f1f1f1;}
+            &:hover{
+              border-right:1px solid #f1f1f1;
+            }
+          }
+          label{
+            padding-left:10px;
+            .inline-input{
+              width:165px;
+            }
+          }
+        }
+        .proBox{
+          width:100%;
+          .nothing{
+            width:100%;
+            height:100px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FAFAFA;
+          }
+          .enterprise{
+            width:100%;
+            height:240px;
+            border:1px solid #f1f1f1;
+            padding:15px 20px;
+            margin-top:20px;
+            box-sizing: border-box;
+            display:flex;
+            justify-content: space-between;
+            .left{
+              display:flex;
+              flex-flow: column;
+              height:100%;
+              width:76%;
+              justify-content: space-around;
+              .title{
+                cursor: pointer;
+                font-size:16px;
+                font-weight: 600;color:#333;
+              }
+              .address,.product{
+                font-size:14px;
+              }
+              .relationship{
+                display:flex;
+                align-items: center;
+                .vip{
+                  height:20px;
+                  background-color:#666 ;
+                  color:#fff;
+                  margin-right:5px;
+                  display:flex;
+                  justify-content: space-between;
+                  padding-right:8px;
+                  box-sizing: border-box;
+                  align-items: center;
+                  .arrow-right{
+                    width:0;
+                    height:0;
+                    border:10px solid #ffffff;
+                    border-right:2px solid transparent;
+                    border-top:10px solid transparent;
+                    border-bottom:10px solid transparent;
+                  }
+                }
+                i{
+                  width:20px;
+                  height:20px;
+                  img{
+                    width:100%;
+                    height:100%;
+                  }
+                }
+                .icon-cheng{
+                  font-size:20px;
+                  margin:0 10px;
+                }
+                .icon-xin:before{
+                  font-size:20px;
+                  background-color: #666;
+                  color:#fff;
+                }
+              }
+              .enterpriseGo{
+                display:flex;
+                li{
+                  cursor: pointer;
+                  height:30px;
+                  border:1px solid #ebebeb;
+                  padding:5px 7px;
+                  display:flex;
+                  align-items: center;
+                  margin-right:18px;
+                  i{
+                    color:#cd2322;
+                  }
+                  &:last-child{margin:0;}
+                }
+              }
+            }
+            .right{
+              display:flex;
+              height:100%;
+              width:100%;
+              li{
+                cursor: pointer;
+                width:180px;
+                height:100%;
+                border:1px solid #eeeeee;
+                display:flex;
+                flex-flow:column;
+                justify-content: space-between;
+                align-items: center;
+                padding:10px;box-sizing: border-box;
+                img{width:100%;max-height:90%;}
+              }
+            }
+          }
+        }
+        .pagination{
+          width:100%;
+          padding:40px 0;
+          display:flex;
+          justify-content: flex-end;
+        }
+      }
+      .right{
+        width:190px;
+        .side{
+          width:100%;
+          height:465px;
+          margin-bottom:20px;
+          border:1px solid #f1f1f1;
+          border-top:4px solid #17a6b5;
+          font-size:14px;
+          &:first-child{
+            height:264px;
+          }
+          &:last-child{margin-bottom:0;}
+          .title{
+            width:100%;
+            height:37px;
+            display:flex;
+            align-items: center;
+            color:#333;
+            padding-left:9px;
+            box-sizing: border-box;
+            border-bottom:1px solid #ebebeb;
+          }
+          ul{
+            width:100%;
+            padding:9px;
+            box-sizing: border-box;
+            li{
+              width:100%;
+              height:40px;
+              display:flex;
+              align-items: center;
+              justify-content: space-between;
+              span{
+                display:flex;
+                align-items: center;
+                i{
+                  width:25px; height:25px;
+                  background-color: #dddddd;
+                  display: flex;align-items: center;
+                  justify-content: center;
+                  color:#333;
+                }
+              }
+              &:nth-child(1)>span>i{
+                background-color: #dd2726;
+              }
+              &:nth-child(2)>span>i{
+                background-color: #ec5d31;
+              }
+              &:nth-child(3)>span>i{
+                background-color: #f68951;
+              }
+              em{
+                color:#999;
+                font-style: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
